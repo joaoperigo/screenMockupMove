@@ -6,7 +6,7 @@ var siteImgHeight = '0'; //img file height
 var mobileImgHeight = mobile.offsetHeight; //screen height size
 
 //get scrolled img size values (from the file)
-getImgSize('/img/site.png');
+getImgSize('img/site.png');
 function getImgSize(imgSrc) {
   var newImg = new Image();
   newImg.src = imgSrc;
