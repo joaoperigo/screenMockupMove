@@ -1,18 +1,11 @@
 //Build values from objects
 var site = document.getElementById("site"); 
 var mobile = document.getElementById("mobile"); 
-var siteImgWidth = '0'; //img file width
-var siteImgHeight = '0'; //img file height
+var siteImgWidth = '245'; //img file width
+var siteImgHeight = '756'; //img file height
 var mobileImgHeight = mobile.offsetHeight; //screen height size
 
-//get scrolled img size values (from the file)
-getImgSize('img/site.png');
-function getImgSize(imgSrc) {
-  var newImg = new Image();
-  newImg.src = imgSrc;
-  siteImgWidth = newImg.width;
-  siteImgHeight = newImg.height;
-}
+
 
 //set size of scrolled div getting mobile mockup img element values
 site.style.height = (mobileImgHeight - 70) + 'px';
